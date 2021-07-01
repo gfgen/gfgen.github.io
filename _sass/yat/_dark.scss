@@ -284,6 +284,10 @@ html[data-theme="dark"]  {
   color:#8be9fd;
   font-weight:700
   }
+
+  .hljs-params {
+    color: #ffb86c
+  }
   .hljs-link,
   .hljs-regexp,
   .hljs-selector-attr,
@@ -291,7 +295,7 @@ html[data-theme="dark"]  {
   .hljs-symbol,
   .hljs-template-variable,
   .hljs-variable {
-  color:#bc6060
+  color:#ff5555
   }
   .hljs-literal {
   color:#8be9fd
