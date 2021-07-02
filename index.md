@@ -1,8 +1,17 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: about
 title: Home
-banner: "/assets/images/banners/home.jpeg"
 ---
+
+<h2>About</h2>
+
+<p>
+:art:&nbsp;Yet another theme for elegant writers with modern flat style
+and beautiful night mode.
+</p>
+
+<p>
+Hey, nice to meet you, you found this Jekyll theme. Here the yet another
+theme is a modern theme, and it's quite clear, clean and neat for writers
+and posts.
+</p>
