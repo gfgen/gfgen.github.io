@@ -31,7 +31,7 @@ html[data-theme="dark"]  {
   }
 
   table {
-    color: #9d9d9d;
+    color: darken($dark-text-color, 5%);
 
     th {
       background-color: #050505;
@@ -221,7 +221,7 @@ html[data-theme="dark"]  {
   }
 
   pre {
-    background-color: #282a36;
+    background-color: #252526;
   }
 
   /**
