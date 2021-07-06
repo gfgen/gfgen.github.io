@@ -1,4 +1,4 @@
-$dark-background-color:       #282a36 !default;
+$dark-background-color: #131418 !default;
 $dark-text-color: #f8f8f2 !default;
 
 html[data-theme="dark"]  {
@@ -28,6 +28,7 @@ html[data-theme="dark"]  {
 
   blockquote {
     border-left: 4px solid #484848;
+    color: #cfcfbd;
   }
 
   table {
@@ -209,7 +210,6 @@ html[data-theme="dark"]  {
    */
   pre,
   code {
-    @include relative-font-size(0.9375);
     color: #f8f8f2;
   }
 
@@ -234,16 +234,16 @@ html[data-theme="dark"]  {
     }
 
     .previous:before {
-      border-color: #ff5100
+      border-color: $dark-text-color 
     }
     .next:after {
-      border-color: #ff5100
+      border-color: $dark-text-color 
     }
   }
 
   .post-related {
     ul a {
-      color: darken($dark-text-color, 10%)
+      color: $dark-text-color
     }
   }
 

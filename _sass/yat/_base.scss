@@ -255,7 +255,7 @@ table {
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
+  @include relative-font-size(1.0);
   color: $text-color;
 }
 
