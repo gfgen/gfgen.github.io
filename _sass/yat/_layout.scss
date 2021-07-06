@@ -502,6 +502,7 @@ html {
   justify-content: space-between;
   margin: 72px 0 59px;
   padding: 31px 0 0;
+  border-top:2px solid #f55;
 
   a {
     @include relative-font-size(1.125);
