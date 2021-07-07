@@ -1,6 +1,7 @@
 <script>
   function hashLocate(hashValue) {
     hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = hashValue.replace(/^.*#/, '');
     hashValue = decodeURIComponent(hashValue);
     var element = document.getElementById(hashValue);
 
@@ -13,17 +14,19 @@
     var headerTop = Math.floor(headerRect.top);
     var headerHeight = Math.floor(headerRect.height);
     var scrollPos = getScrollPos();
-    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    var elemRect = element.getBoundingClientRect();
+    var offsetY = elemRect.top + scrollPos.y - (headerHeight + 20);
 
     if (offsetY == scrollPos.y) {
       return;
     }
 
-    if (headerTop == 0  && offsetY > scrollPos.y) {
+/*     if (headerTop == 0  && offsetY > scrollPos.y) {
       offsetY += headerHeight + 2;
     } else if (headerTop < 0  && offsetY < scrollPos.y) {
       offsetY -= headerHeight - 2;
-    }
+    } */
 
     smoothScrollTo(offsetY);
   }
