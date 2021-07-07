@@ -47,36 +47,37 @@
         return;
       }
 
-      var activeItem = items[index];
-      var beginItem = activeItem
-      var endItem = activeItem
-      var beginIndex = index;
-      var endIndex = index + 1;
-      while (beginIndex >= 0
-        && !items[beginIndex].classList.contains('h-h2')) {
-        beginIndex -= 1;
+      if (index == -1) { index = 0; }
+      var half_over_items = parseInt(over_items / 2);
+      var rem_over_items = over_items % 2;
+      var top_collides = half_over_items > index;
+      var bot_collides = half_over_items + rem_over_items > items.length - index;
+
+      var beginIndex = index - half_over_items;
+      var endIndex = index + half_over_items + rem_over_items;
+
+      if (top_collides) {
+        endIndex = over_items; 
       }
-      while (endIndex < items.length
-        && !items[endIndex].classList.contains('h-h2')) {
-        endIndex += 1;
+      if (bot_collides) {
+        beginIndex = items.length - over_items;
+        endIndex = items.length;
       }
+      if (top_collides) {
+        beginIndex = 0;
+      }
+
       for (var i = 0; i < beginIndex; i++) {
         item = items[i]
-        if (!item.classList.contains('h-h2')) {
-          item.style.display = 'none';
-        }
+        item.style.display = 'none';
       }
-      for (var i = beginIndex + 1; i < endIndex; i++) {
+      for (var i = beginIndex; i < endIndex; i++) {
         item = items[i]
-        // if (!item.classList.contains('h-h2')) {
-          item.style.display = '';
-        // }
+        item.style.display = '';
       }
       for (var i = endIndex; i < items.length; i++) {
         item = items[i]
-        if (!item.classList.contains('h-h2')) {
-          item.style.display = 'none';
-        }
+        item.style.display = 'none';
       }
     }
 
