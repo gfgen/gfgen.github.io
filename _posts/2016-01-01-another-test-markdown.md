@@ -19,9 +19,9 @@ $ \int\_a^b f(x)\,dx. $
 
 \\( \int\_a^b f(x)\,dx. \\)
 
-$ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )|\phi _i^\sigma ({\bf{r}})|^2} $
+$ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma ) $ | $ \phi _i^\sigma ({\bf{r}})|^2} $
 
-$$ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )|\phi _i^\sigma ({\bf{r}})|^2} $$
+$$ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma ) $$ | $$ \phi _i^\sigma ({\bf{r}})|^2} $$
 
 
 {{ "here is a liquid filter." | capitalize }}
